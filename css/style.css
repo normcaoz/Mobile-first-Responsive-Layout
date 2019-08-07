@@ -1,0 +1,482 @@
+/* ---- Base Style --- */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* ---- Main Style --- */
+body{
+    text-align: center;
+    margin: 0 0;
+    background: #d1ffe9;
+}
+
+header{
+  margin: 0 auto;
+  width: 90%;
+}
+
+li{
+  list-style-type: none;
+}
+
+h3{
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: rgb(80,80,80);
+}
+
+/* --- Base Layout Styles --- */
+
+/* --- Header Styles ---*/
+.main-nav{
+  color: rgb(74,74,74)
+}
+
+.name{
+  font-size: 2.3em;
+  padding: 32px 0;
+  margin: 0 auto;
+}
+
+.nav-list{
+  padding-left: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-list li{
+  background: #fcc21b;
+  padding: 20px 0;
+  margin: 7px 0;
+}
+
+.self-intro{
+  padding: 43px 0;
+  font-size: 1.45em;
+  line-height: 1.6;
+  color: #003399;
+
+}
+
+.intro-content {
+  font-family: 'Lacquer', sans-serif;
+}
+
+.profile-pic{
+  padding: 15px 0;
+  width: 70%
+}
+
+/* --- Main Content Styles ---*/
+
+#portfo-anchor{
+  background: #fff;
+}
+
+.container{
+  padding-bottom: 2.2em;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.portfolio{
+  text-transform: uppercase;
+  font-size: 0.9em;
+  padding: 55px 0;
+  color: rgb(74,74,74)
+}
+
+.photo{
+  width: 100%;
+}
+
+.content{
+  margin: 45px auto;
+}
+
+.sub-heading{
+  text-transform: capitalize;
+  font-size: 1.75em;
+  font-weight: 500;
+  color: rgb(85,85,85)
+}
+
+.content-text {
+  font-size: 1.4em;
+  line-height: 1.5;
+  color: rgb(160,160,160)
+}
+
+#skills-anchor {
+  background-color: #fff7e0;
+  font-size: 1.3em;
+  margin: 0 auto;
+  padding: 1em 1em;
+}
+
+#skills-anchor li{
+  text-align: left;
+  margin-left: 1em;
+  padding: 5px 0;
+  list-style-type: square;
+}
+
+/* --- footer style ---*/
+
+.footer-content{
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 65px;
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+.contact-content{
+  padding-top: 15px;
+  padding-bottom: 75px;
+  color: rgb(74,74,74);
+}
+
+.e-link{
+  display: inline;
+}
+
+.bottom-content{
+  border-top: solid 1px rgb(160,160,160);
+}
+
+.name-bottom,
+.back-to-top{
+    display: inline-block;
+    font-weight: bold;
+    padding: 25px 0;
+    font-size: 0.7em;
+}
+
+.name-bottom{
+  float: left;
+}
+
+.back-to-top{
+  float: right;
+  text-transform: uppercase;
+}
+
+.nav-list-bottom{
+  display: none;
+}
+
+/* ---- link style --- */
+a {
+  display: block;
+}
+
+a:link {
+  text-decoration-style: double;
+  color: rgb(74,74,74)
+}
+
+a:visited {
+  color: rgb(150,150,150);
+}
+
+a:hover {
+  color: orange;
+}
+
+/* --- Float clearfix ---*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ---- Media Queries --- */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .container{
+    display: inline-block;
+  }
+
+/* --- Header Styles ---*/
+
+.name{
+  font-size: 1.7em;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.nav-list{
+  margin: 0 auto;
+}
+
+.nav-list,
+.nav-list li{
+    display: inline-block;
+    font-size: 1em;
+}
+
+.nav-list li{
+    padding: 10px 30px;
+    background: none;
+}
+
+.intro-content{
+    text-align: left;
+    float: left;
+    width: 60%;
+    font-size: 0.85em;
+    line-height: 1.5;
+    padding-right: 20px;
+}
+
+.profile-pic{
+    float: right;
+    width: 40%;
+}
+
+.portfolio{
+  font-size: 0.6em;
+  padding: 35px 0;
+}
+
+/* --- Main Content Styles ---*/
+
+
+.card{
+  width: 50%;
+  float: left;
+  display: inline-block;
+  padding: 10px 8px;
+}
+
+.content{
+  position: relative;
+  width: 100%;
+  padding-top: 48%; /* controlling Aspect Ratio
+  https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
+  margin: 0 auto;
+}
+
+.sub-heading{
+  font-size: 1.2em;
+  font-weight: 500;
+
+  position: absolute;
+  top: 15px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.content-text{
+  padding: 0 40px;
+  font-size: 0.9em;
+
+  position: absolute;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+/* --- Footer Styles ---*/
+
+.footer-content{
+  font-size: 1.25em;
+  padding-top: 40px;
+}
+
+.footer-content h3{
+  font-size: 0.8em;
+}
+
+.contact-content{
+  margin: 0 55px;
+}
+
+.nav-list-bottom{
+  display: inline-block;
+  float: right;
+}
+
+.name-bottom{
+  margin-top: 20px;
+  padding-top: 0.7em;
+
+}
+
+.nav-list-bottom li{
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 0.7em;
+  padding-left: 15px;
+}
+
+.back-to-top{
+  display: none;
+}
+
+
+}
+
+
+@media (min-width: 1024px){
+
+  body{
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  /* --- Header Styles ---*/
+
+.name,
+.nav-list li{
+  display: inline-block;
+}
+
+.name{
+  float: left;
+  font-size: 1.6em;
+  padding: 50px 0;
+}
+
+.nav-list{
+  float: right;
+}
+
+.nav-list li{
+  padding: 30px 18px;
+  font-size: 0.7em;
+  background: none;
+}
+
+.self-intro{
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+
+.profile-pic{
+    float: right;
+    width: 40%;
+    padding: 0 0;}
+
+.intro-content{
+    text-align: left;
+    float: left;
+    width: 60%;
+    font-size: 0.85em;
+    line-height: 1.5;
+    padding-right: 50px;
+    margin: 0 auto;
+}
+
+#skills-anchor {
+  width: 95%;
+}
+
+#skills-anchor li{
+  text-align: center;
+}
+
+
+/* --- Main Content Styles ---*/
+#portfo-anchor{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container{
+  padding-bottom: 0;
+  width: 96%;
+}
+
+.portfolio{
+  font-size: 0.6em;
+}
+
+.card{
+  width: 33.3333%;
+  float:left;
+  padding: 0 10px;
+}
+
+.content {
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  padding-top: 48%; /* controlling Aspect Ratio
+  https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
+}
+
+.sub-heading{
+  font-size: 1.1em;
+  font-weight: 500;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.content-text {
+  padding: 0 20px;
+  font-size: 0.9em;
+
+  position: absolute;
+  top: 35px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* --- Footer Styles ---*/
+
+.footer-content{
+  padding-top: 45px;
+}
+
+.footer-content h3{
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+.contact-content{
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 3px;
+  padding-bottom: 70px;
+  font-size: 0.8em;
+}
+
+.name-bottom{
+    padding-top: 25px;
+    margin-top: 0;
+}
+
+.nav-list-bottom{
+  display: inline-block;
+  float: right;
+  padding-top: 10px;
+  margin-top: 0;
+}
+
+.nav-list-bottom li{
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 0.6em;
+  font-weight: bold;
+  padding-left: 35px;
+}
+
+.back-to-top{
+  display: none;
+}
+
+}
